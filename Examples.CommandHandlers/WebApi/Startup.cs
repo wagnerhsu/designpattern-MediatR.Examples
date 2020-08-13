@@ -1,23 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Net.Http.Formatting;
-using System.Threading;
-using System.Web.Http;
-using System.Web.Http.Controllers;
-using System.Web.Http.ExceptionHandling;
-using System.Web.Http.Routing;
-using System.Web.Mvc;
-using System.Web.Routing;
-using Microsoft.Owin;
+﻿using Microsoft.Owin;
 using Newtonsoft.Json.Serialization;
-using NLog;
-using Owin;
 using Ninject.Web.Common.OwinHost;
 using Ninject.Web.WebApi.OwinHost;
+using NLog;
+using Owin;
+using System;
+using System.Linq;
+using System.Net.Http.Formatting;
+using System.Web.Http;
 
 [assembly: OwinStartup(typeof(WebApi.Startup))]
+
 namespace WebApi
 {
     public class Startup
@@ -31,7 +24,7 @@ namespace WebApi
             try
             {
                 app.UseNinjectMiddleware(() => NinjectConfig.CreateKernel.Value);
-                
+
                 ConfigureWebApi(app);
             }
             catch (Exception e)

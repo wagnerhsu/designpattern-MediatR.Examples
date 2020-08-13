@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MediatR;
+﻿using MediatR;
+using System;
 
 namespace Common.Event
 {
-    public abstract class DomainEvent:INotification
+    public abstract class DomainEvent : INotification
     {
         protected DomainEvent()
         {

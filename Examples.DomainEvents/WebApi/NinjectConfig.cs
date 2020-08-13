@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using Domain.Catalog;
+﻿using Domain.Catalog;
 using Domain.Logging;
 using Domain.Order;
 using Domain.Statistics;
@@ -12,6 +8,10 @@ using Ninject.Components;
 using Ninject.Infrastructure;
 using Ninject.Planning.Bindings;
 using Ninject.Planning.Bindings.Resolvers;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
 
 namespace WebApi
 {

@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Common.Event;
+﻿using Common.Event;
 using MediatR;
 using NLog;
 
 namespace Domain.Logging.EventHandler
 {
-    public class LogAllEventsHandler: INotificationHandler<DomainEvent>
+    public class LogAllEventsHandler : INotificationHandler<DomainEvent>
     {
         private static Logger _logger = LogManager.GetCurrentClassLogger();
 

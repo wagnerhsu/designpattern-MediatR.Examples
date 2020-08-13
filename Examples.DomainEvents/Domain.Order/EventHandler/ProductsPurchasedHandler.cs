@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Domain.Catalog.Event;
+﻿using Domain.Catalog.Event;
 using Domain.Order.Event;
 using MediatR;
 
 namespace Domain.Order.EventHandler
 {
-    public class ProductsPurchasedHandler: INotificationHandler<ProductsPurchased>
+    public class ProductsPurchasedHandler : INotificationHandler<ProductsPurchased>
     {
         private IMediator _mediator;
 

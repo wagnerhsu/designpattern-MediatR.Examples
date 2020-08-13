@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Domain.Order.CommandResponse
+﻿namespace Domain.Order.CommandResponse
 {
     public class OrderComplaintInfo
     {

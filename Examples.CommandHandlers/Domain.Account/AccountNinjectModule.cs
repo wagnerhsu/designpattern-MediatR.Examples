@@ -1,7 +1,7 @@
 ﻿using MediatR;
+using Ninject.Extensions.Conventions;
 using Ninject.Modules;
 
-using Ninject.Extensions.Conventions;
 namespace Domain.Account
 {
     public class AccountNinjectModule : NinjectModule

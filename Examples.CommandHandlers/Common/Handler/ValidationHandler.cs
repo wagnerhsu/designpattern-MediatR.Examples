@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
-using Common.Command;
+﻿using Common.Command;
 using FluentValidation;
 using MediatR;
+using System;
+using System.Linq;
+using System.Reflection;
 
 namespace Common.Handler
 {
@@ -33,7 +30,7 @@ namespace Common.Handler
         public TResponse Handle(TRequest request)
         {
             var validator = CreateValidatorForCommand(request);
-            if(validator == null)
+            if (validator == null)
                 return HandleRequest(request);
 
             var context = new ValidationContext(request);

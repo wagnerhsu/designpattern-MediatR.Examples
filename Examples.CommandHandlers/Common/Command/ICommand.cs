@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MediatR;
+﻿using MediatR;
 
 namespace Common.Command
 {
-    public interface ICommand<T>:IRequest<T>
+    public interface ICommand<T> : IRequest<T>
     {
     }
 }

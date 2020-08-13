@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Web.Http;
-using Domain.Account.Command;
+﻿using Domain.Account.Command;
 using Domain.Account.CommandResponse;
 using Domain.Order.Command;
 using Domain.Order.CommandResponse;
 using MediatR;
+using System.Web.Http;
 
 namespace WebApi.Controllers
 {

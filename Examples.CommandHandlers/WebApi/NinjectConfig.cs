@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using Domain.Account;
+﻿using Domain.Account;
 using Domain.Order;
 using MediatR;
 using Ninject;
@@ -10,6 +6,10 @@ using Ninject.Components;
 using Ninject.Infrastructure;
 using Ninject.Planning.Bindings;
 using Ninject.Planning.Bindings.Resolvers;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
 
 namespace WebApi
 {
@@ -31,7 +31,7 @@ namespace WebApi
             kernel.Components.Add<IBindingResolver, ContravariantBindingResolver>();
             kernel.Bind<SingleInstanceFactory>().ToMethod(ctx => t => ctx.Kernel.Get(t));
             kernel.Bind<MultiInstanceFactory>().ToMethod(ctx => t => ctx.Kernel.GetAll(t));
-            
+
             kernel.Bind<IMediator>().To<Mediator>();
         }
 

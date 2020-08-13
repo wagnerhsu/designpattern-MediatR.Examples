@@ -1,6 +1,6 @@
 ﻿using MediatR;
-using Ninject.Modules;
 using Ninject.Extensions.Conventions;
+using Ninject.Modules;
 
 namespace Domain.Order
 {
